@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #212121;
+}
+html {
+    scroll-behavior: smooth;
+   
+}
+body {
+    scroll-snap-type: y mandatory;  
+    overflow-y: scroll;
+}
+
+/*Navigation CSS*/
+    .navParent {
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: auto;
+        width: 100%;
+        z-index: 10;
+    }
+    nav {
+        font-family: Raleway, sans-serif;
+        padding: 10px 0;
+        height:40px;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+        
+      }
+      
+      .logo {
+        height: 50px;
+        width: 50px;
+        margin-left: 2vw;
+      }
+      
+      .pages {
+        display:flex;
+        justify-content: space-between;
+        font-weight: 500;
+        font-size:14px;
+        align-items:center;
+        margin-right:1vw;
+      }
+      
+      .pages li {
+        margin: 0;
+        padding:  0 40px;
+        list-style: none;
+        transition: 0.5s;
+      }
+      .pages a {
+        font-size: 24px;
+        transition:0.5s;
+        text-decoration: none;
+      }
+
+      
+      
+      .pages a:hover {
+        color: white;
+      }
+
+       a:target, a:focus ,a:active {
+        border-bottom: 2px solid #333;
+        font-weight: 600;
+      }
+      
+      .right {
+        display: flex;
+        margin-right: 2vw;
+      }
+
+.container {
+    margin:0 auto;
+    width: 960px;
+}
+
+
+section {
+   height:100vh;
+   scroll-snap-align: start;
+}
+  
+h1 {
+    display: inline-block;
+    font-family: Raleway, sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    margin: 10vh 0 6vh 0;
+}
+
+.writing {
+    height: 50vh;
+}
+
+.type {
+    overflow: hidden;
+    white-space:nowrap;
+    border-right: 2px solid #333;
+    width:19ch;
+    animation: type 2.5s steps(19); 
+}
+
+@keyframes type {
+    0% {width:0ch}
+    100% {width:19ch}
+  }
+
+h4 {
+    font-family: Raleway, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    padding-bottom: 2vh;
+}
+
+.text-box {
+    margin: 0 auto;
+    width:600px;
+}
+
+p {
+    font-family: 'EB Garamond';
+    font-size: 22px;
+    font-weight: normal;
+    padding-bottom: 3vh;
+}
+
+#hero {
+    background: linear-gradient(180deg, #ffa800, white);
+    text-align: center;
+}
+
+.skills{
+    height:50vh;
+    width: 100%;
+    margin-top: 6vh;
+    display: flex;
+    justify-content: center;  
+    margin-bottom: 0;
+}
+
+h6 {
+    font-family: Raleway, sans-serif;
+    font-size:20px;
+    margin-top: -30px;
+    display: absolute;
+    top: 60px;
+}
+
+.skillBox {
+    height:100%;
+    width: 100%;
+    position: relative;
+}
+
+.col {
+    background: linear-gradient(180deg, white, #ffa800 100%, white 200%, #ffa800 300% );
+    background-size:400% 400%;
+    height:90%;
+    width: 160px;
+    animation: move 8s linear infinite;
+    animation-delay: 6s;
+    position: absolute;
+    bottom: 0;
+    right:0;
+  
+}
+.col2 {
+    background: linear-gradient(180deg, white, #ffa800 100%, white 200%, #ffa800 300% );
+    background-size:400% 400%;
+    height:67%;
+    width: 160px;
+    animation: move 8s linear infinite;
+    animation-delay: 9s;
+    position: absolute;
+    bottom: 0;
+    right:0;
+}
+.col3 {
+    background: linear-gradient(180deg, white, #ffa800 100%, white 200%, #ffa800 300% );
+    background-size:400% 400%;
+    height:87%;
+    width: 160px;
+    animation: move 8s linear infinite;
+    animation-delay: 7s;
+    position: absolute;
+    bottom: 0;
+    right:0;
+}
+.col4 {
+    background: linear-gradient(180deg, white, #ffa800 100%, white 200%, #ffa800 300% );
+    background-size:400% 400%;
+    height:56%;
+    width: 160px;
+    animation: move 8s linear infinite;
+    animation-delay: 10s;
+    position: absolute;
+    bottom: 0;
+    right:0;
+}
+.col5 {
+    background: linear-gradient(180deg, white, #ffa800 100%, white 200%, #ffa800 300% );
+    background-size:400% 400%;
+    height:88%;
+    width: 160px;
+    animation: move 8s linear infinite;
+    animation-delay: 8s;
+    position: absolute;
+    bottom: 0;
+    right:0;
+}
+
+@keyframes move{
+    0% {background-position: 0% 50%}
+    20% {background-position: 50% 100%}
+    40% {background-position: 150% 200%}
+    60% {background-position: 250% 300%}
+    80% {background-position: 350% 400%}
+    100%{background-position:400% 400%}
+  }
+  
+#projects {
+    text-align: center;
+}
+
+.showcase {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: stretch;
+    height: 70vh;
+}
+
+.project {
+    height: 220px;
+    width: 250px;
+    background: #ffa800;
+    margin: 20px 30px;
+}
+
+#contact {
+    background: linear-gradient(180deg, white, #ffa800);
+    text-align: center;
+}
