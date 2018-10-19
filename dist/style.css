@@ -20,6 +20,7 @@ body {
         margin: auto;
         width: 100%;
         z-index: 10;
+        font-size: 20px;
     }
     nav {
         font-family: Raleway, sans-serif;
@@ -58,6 +59,7 @@ body {
         font-size: 24px;
         transition:0.5s;
         text-decoration: none;
+        font-size: 16px;
       }
 
       
@@ -90,9 +92,9 @@ section {
 h1 {
     display: inline-block;
     font-family: Raleway, sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 800;
-    margin: 10vh 0 6vh 0;
+    margin: 14vh 0 6vh 0;
 }
 
 .writing {
@@ -114,7 +116,7 @@ h1 {
 
 h4 {
     font-family: Raleway, sans-serif;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 600;
     padding-bottom: 2vh;
 }
@@ -126,7 +128,7 @@ h4 {
 
 p {
     font-family: 'EB Garamond';
-    font-size: 22px;
+    font-size: 16px;
     font-weight: normal;
     padding-bottom: 3vh;
 }
@@ -231,17 +233,17 @@ h6 {
 
 .showcase {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-flow: row wrap;
     align-items: stretch;
     height: 70vh;
 }
 
 .project {
-    height: 220px;
-    width: 250px;
+    height: 160px;
+    width: 280px;
     background: #ffa800;
-    margin: 20px 30px;
+    margin: 2px 4px;
 }
 
 #contact {
